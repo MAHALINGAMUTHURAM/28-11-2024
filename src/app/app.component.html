@@ -1,0 +1,26 @@
+<div class = "title">{{title}}</div>
+
+<ul *ngFor="let i of item">
+  <li>{{i.itemName}} {{i.price}}</li>
+</ul>
+
+<h3 class="title">ENTER YOUR ORDER DETAILS</h3>
+
+<label>Enter Item id</label><br/>
+<input type="text" [(ngModel)] = "itemId" /> <br/>
+<label>Enter Item Name</label><br/>
+<input type="text" [(ngModel)] = "itemName" /> <br/>
+<label>Enter Price</label><br/>
+<input type="text" [(ngModel)] = "price"/> <br/>
+<label>Quantity</label><br/>
+<input type="text" [(ngModel)] = "quantity"/> <br/>
+
+<h4>You Entered {{itemName}} {{price}} {{quantity}}</h4>
+
+<button (click)="saveitem()">Submit</button><br/>
+
+<label>Enter Order here</label><br/>
+<input type="text" [(ngModel)] = "order.orderId" /><br/>
+<label>Enter Order Description</label><br/>
+<input type="text" [(ngModel)] = "order.orderDetails" /><br/>
+<button (click)="saveorder()">Save Order</button>

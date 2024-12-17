@@ -1,0 +1,24 @@
+title{
+    background-color: burlywood;
+    width: 150px;
+    height: 200px;
+    border-radius: 11px;
+    border-style: outset;
+}
+
+ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0;
+}
+ul li{
+    padding: 10px;
+    border-bottom: 1px solid #d10000;
+}
+ul li:last-child{
+    border-bottom: none;
+}
+
+ul li:hover{
+    background-color: aquamarine;
+}
